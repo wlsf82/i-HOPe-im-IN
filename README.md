@@ -18,6 +18,8 @@ To install the dev dependencies, run `npm install` (or `npm i` for short.)
 
 ## Tests
 
+A detailed test plan can be found at the [`TestPlan.md`](./TestPlan.md) file.
+
 Run `npm run test:api` to run the API tests
 
 Run `npm run test:ui` to run the UI tests in headless mode
