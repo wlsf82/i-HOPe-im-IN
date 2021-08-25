@@ -53,7 +53,7 @@ describe('Customers App API', function() {
       expect(customers[5].contactInfo).to.exist
     })
 
-    it('doesn\'t return customer\'s contact info if there\s none', function() {
+    it('doesn\'t return customer\'s contact info if there\'s none', function() {
       const { customers } = this.postRes.body
 
       expect(customers[3].contactInfo).not.to.exist
