@@ -4,8 +4,8 @@
   "description": "TBD.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:apis",
     "test:api": "cypress run --spec cypress/integration/api-tests/customer.spec.js",
+    "test:ui": "cypress run --spec cypress/integration/ui-tests/customer.spec.js",
     "cy:open": "cypress open"
   },
   "keywords": [],

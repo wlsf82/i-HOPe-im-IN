@@ -20,6 +20,10 @@ To install the dev dependencies, run `npm install` (or `npm i` for short.)
 
 Run `npm run test:api` to run the API tests
 
+Run `npm run test:ui` to run the UI tests in headless mode
+
+> Note: When running in headless mode, Cypress automatically saves videos of the executions at `cypress/videos/`, and if tests fail, Cypress automatically saves screenshots of the failures at `cypress/screenshots/`.
+
 ### Interactive mode
 
 Run `npm run cy:open` to open the Cypress Test Runner to run tests in interactive.
