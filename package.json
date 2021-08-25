@@ -1,0 +1,17 @@
+{
+  "name": "i-HOPe-im-IN",
+  "version": "1.0.0",
+  "description": "TBD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:apis",
+    "test:api": "cypress run --spec cypress/integration/api-tests/customer.spec.js",
+    "cy:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  }
+}
