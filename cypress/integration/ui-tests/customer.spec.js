@@ -45,7 +45,7 @@ describe('Customers App UI', () => {
     })
 
     context('Customer List Screen', () => {
-      it('greets and shows a table with headings and six rows', () => {
+      it('greets and shows a table with headings and five rows', () => {
         cy.contains(`Hi ${salesRepresentative}. It is now ${currentTimestamp} and here is our customer list. Click on each of them to view their contact details.`)
         cy.get('table').as('table')
           .should('be.visible')
