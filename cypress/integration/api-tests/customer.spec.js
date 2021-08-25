@@ -1,6 +1,6 @@
 describe('Customers App API', function() {
   const apiUrl = Cypress.env('API_URL')
-  const salesPersonName = 'Jonny'
+  const salesRepresentative = 'Jonny'
   const currentTimestamp = (new Date()).toDateString()
 
   context('POST', function() {
@@ -8,7 +8,7 @@ describe('Customers App API', function() {
       cy.request(
         'POST',
         apiUrl,
-        { name: salesPersonName }
+        { name: salesRepresentative }
       ).as('postRes')
     })
     it('returns a 200 status code', function() {
@@ -18,7 +18,7 @@ describe('Customers App API', function() {
     it('returns "name", "timestamp", and "customer" properties on response body', function() {
       const { name, timestamp, customers } = this.postRes.body
 
-      expect(name).to.equal(salesPersonName)
+      expect(name).to.equal(salesRepresentative)
       expect(timestamp).to.equal(currentTimestamp)
       customers.forEach(customer => {
         expect(customer.id).to.exist
