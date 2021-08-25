@@ -35,14 +35,14 @@
     {
       "id": 4,
       "name": "Customer Four",
-      "employees": 1,
-      "size": "Small"
+      "employees": 101,
+      "size": "Medium"
     },
     {
       "id": 5,
       "name": "Customer Fove",
-      "employees": 11,
-      "size": "Medium",
+      "employees": 100,
+      "size": "Small",
       "contactInfo": {
         "email": "customer@five.com",
         "name": "Borge Ø."

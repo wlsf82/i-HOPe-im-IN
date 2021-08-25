@@ -70,10 +70,10 @@ describe('Customers App UI', () => {
           .should('contain', 'Big')
         cy.get('@tableRows')
           .eq(3)
-          .should('contain', 'Small')
+          .should('contain', 'Medium')
         cy.get('@tableRows')
           .eq(4)
-          .should('contain', 'Medium')
+          .should('contain', 'Small')
       })
     })
 
