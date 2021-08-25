@@ -11,6 +11,7 @@ describe('Customers App API', function() {
         { name: salesRepresentative }
       ).as('postRes')
     })
+
     it('returns a 200 status code', function() {
       expect(this.postRes.status).to.equal(200)
     })
