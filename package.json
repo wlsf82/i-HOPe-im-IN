@@ -1,14 +1,12 @@
 {
   "name": "i-HOPe-im-IN",
   "version": "1.0.0",
-  "description": "TBD.",
-  "main": "index.js",
+  "description": "This project aims to test the Customer App developed by Hopin.",
   "scripts": {
     "test:api": "cypress run --spec cypress/integration/api-tests/customer.spec.js",
     "test:ui": "cypress run --spec cypress/integration/ui-tests/customer.spec.js",
     "cy:open": "cypress open"
   },
-  "keywords": [],
   "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
   "license": "MIT",
   "devDependencies": {
