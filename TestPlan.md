@@ -20,7 +20,7 @@ With the app servers up-and-running locally (backend and frontend), visit http:/
 
 ### TC1 - Initial State
 
-**Expected result:** When in the home page, you should see a heading (Welcome to Customer App), a paragraph (Please provide your name:), and an input text field and a submit button.
+**Expected result:** When in the home page, you should see a heading (Welcome to Customer App), a paragraph (Please provide your name:), an input text field, and a submit button.
 
 **Actual result:** Passed. ✅
 
@@ -50,7 +50,7 @@ With the app servers up-and-running locally (backend and frontend), visit http:/
 
 > I've created this test case based on how the app behaves since this is not described in the app requirements.
 
-**Expected result:** You should see a greeting based on the name type on the text field with the following format:
+**Expected result:** You should see a greeting based on the name type in the text field with the following format:
 
 Hi **[your-name-here]**. It is now **Tue Aug 24 2021** and here is our customer list. Click on each of them to view their contact details.
 
@@ -76,11 +76,11 @@ Hi **[your-name-here]**. It is now **Tue Aug 24 2021** and here is our customer 
 >
 > Also, at the bottom of the app requirements (at the API section), it says "customer size is: Small, when # of employees is <= 10; Medium when it is <= 1000; Big otherwise."
 >
-> This statement differs from the previous that said that Small was until 100 employess, not 10.
+> This statement differs from the previous that said that Small was until 100 employees, not 10.
 >
 > We need to clarify with the business what's the rule, and fix it accordingly. Finally, when fixing it, I suggest covering all scenarios with tests so that no bug can come back, and no more confusion will happen.
 >
-> My hunch is that the API docs are the ones to follow, but better fo clarify with the business.
+> As a reference, [here](https://github.com/chema-delbarco/Hopin-Exam-QE/blob/main/backend/server.js#L26)'s how it's implemented at the API.
 >
 > There's also a grammar issue, where in some places it mentions greater **then** and less **then**, when it should be greater **than** and less **than**.
 ### TC6 - Clicks customer name
@@ -91,7 +91,7 @@ Hi **[your-name-here]**. It is now **Tue Aug 24 2021** and here is our customer 
 
 **Actual result:** Failed ❌
 
-When clicking in the name of a customer without contact info (United Brands), the app crashes with the following error:
+When clicking in the name of a customer without contact info (e.g.: United Brands), the app crashes with the following error:
 
 ![app-crash-when-no-contact-info](./app-crash-when-no-contact-info.png)
 
@@ -144,6 +144,8 @@ When clicking in the name of a customer without contact info (United Brands), th
 **Actual result:** Failed ❌
 
 > Same error found on TC6.
+>
+> It also needs clarification due to the issue discovered on TC5.
 
 ### TC10 - Company size Medium
 

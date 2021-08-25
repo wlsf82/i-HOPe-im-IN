@@ -18,7 +18,7 @@ Read the following [doc](https://github.com/chema-delbarco/Hopin-Exam-QE/blob/ma
 
 ## Installation of `devDependencies`
 
-To install the dev dependencies, run `npm install` (or `npm i` for short.)
+After cloning this project, to install the dev dependencies, run `npm install` (or `npm i` for short.)
 
 ## Tests
 
@@ -34,7 +34,11 @@ Run `npm run test:ui` to run the UI tests in headless mode
 
 ### Interactive mode
 
+With the servers (backend and frontend) up-and-running:
+
 Run `npm run cy:open` to open the Cypress Test Runner to run tests in interactive mode.
+
+After the test runner is opened, click on the test file you want to test or run them all.
 
 ___
 
