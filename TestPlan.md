@@ -20,7 +20,7 @@ With the app servers up-and-running locally (backend and frontend), visit http:/
 
 ### TC1 - Initial State
 
-**Expected result:** When in the home page, you should see a heading (Welcome to Customer App), a paragraph (Please provide your name:), and a form with an input text field and a submit button.
+**Expected result:** When in the home page, you should see a heading (Welcome to Customer App), a paragraph (Please provide your name:), and an input text field and a submit button.
 
 **Actual result:** Passed. ✅
 
