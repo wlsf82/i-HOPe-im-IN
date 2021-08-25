@@ -37,6 +37,9 @@ describe('Customers App UI', () => {
   })
 
   context('Fill in the text field and submit', () => {
+    // For all tests in this context, I'm mocking the API response.
+    // The idea is just check that the frontend correctly renders what the API provides.
+
     beforeEach(() => {
       cy.intercept('POST', Cypress.env('API_URL'), { fixture: 'customers' })
         .as('postReq')
