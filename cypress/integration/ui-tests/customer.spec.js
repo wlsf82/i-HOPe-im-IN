@@ -32,7 +32,7 @@ describe('Customers App UI', () => {
         .and('contain', 'Name')
         .and('contain', '# of Employees')
         .and('contain', 'Size')
-        .find('tbody tr').should('have.length', 6)
+        .find('tbody tr').should('have.length.gte', 1)
     })
   })
 
