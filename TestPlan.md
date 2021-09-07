@@ -4,7 +4,7 @@ Based on the [app requirements](https://github.com/chema-delbarco/Hopin-Exam-QE/
 
 > The Customers App web application is aimed to our sales people so that they can have access to our customer's contact information.
 >
-> Note: This test plan doesn't cover API tests with tools such as Postman. The idea is to test the app end-to-end, ensuring that both the frontend and API works as expected when connected with each oterh.
+> Note: This test plan doesn't cover API tests with tools such as Postman. The idea is to test the app end-to-end, ensuring that both the frontend and API works as expected when connected with each other.
 >
 > In this docs, every test case is a TC (e.g.: TC1, TC2, TCn).
 
@@ -50,7 +50,7 @@ With the app servers up-and-running locally (backend and frontend), visit http:/
 
 > I've created this test case based on how the app behaves since this is not described in the app requirements.
 
-**Expected result:** You should see a greeting based on the name type in the text field with the following format:
+**Expected result:** You should see a greeting based on the name typed in the text field with the following format:
 
 Hi **[your-name-here]**. It is now **Tue Aug 24 2021** and here is our customer list. Click on each of them to view their contact details.
 
